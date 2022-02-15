@@ -1,6 +1,7 @@
 #include "sort.h"
 /**
- * selection_sort - sort by selection
+ * selection_sort - function that sorts an array of integers
+ * in ascending order using the Selection sort algorithm
  * @array: array of integers
  * @size: size of array
  */
