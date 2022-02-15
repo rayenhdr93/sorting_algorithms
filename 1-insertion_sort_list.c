@@ -1,6 +1,7 @@
 #include "sort.h"
 /**
- * swap - swap
+ * swap -  function that sorts a doubly linked list of integers
+ * in ascending order using the Insertion sort algorithm
  * @f: higher node
  * @s: lower node
  */
