@@ -17,7 +17,7 @@ void swap(listint_t *f, listint_t *s)
 }
 /**
  * insertion_sort_list - insertion_sort_list
- * @list: list
+ * @list: l
  */
 void insertion_sort_list(listint_t **list)
 {
