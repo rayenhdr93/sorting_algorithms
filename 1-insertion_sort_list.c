@@ -23,7 +23,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *f, *s;
 
-	if (!((*list) && (*list)->next))
+	if (!(list && (*list) && (*list)->next))
 		return;
 	s = (*list)->next;
 	while (s)
