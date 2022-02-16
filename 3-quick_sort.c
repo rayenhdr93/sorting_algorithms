@@ -1,14 +1,18 @@
 #include "sort.h"
 /**
- * 
- * 
+ * partition - hi
+ * @array: hi
+ * @first: hi
+ * @last: hi
+ * @size: hi
+ * Return: hi
  */
-int partition(int *array, int fisrt, int last, size_t size)
+int partition(int *array, int first, int last, size_t size)
 {
 	int pivot = array[last], x = 0;
-	int i = (fisrt - 1), j;
+	int i = (first - 1), j;
 
-	for (j = fisrt; j < last; j++)
+	for (j = first; j < last; j++)
 	{
 		if (array[j] <= pivot)
 		{
@@ -34,15 +38,18 @@ int partition(int *array, int fisrt, int last, size_t size)
 /**
  * quickSort - bubble sort
  * @array: array of integers
+ * @first: hi
+ * @last: hi
  * @size: size of array
  */
-void quickSort(int *array, int fisrt, int last, size_t size)
+void quickSort(int *array, int first, int last, size_t size)
 {
 	int pi;
-	if (fisrt < last)
+
+	if (first < last)
 	{
-		pi = partition(array, fisrt, last, size);
-		quickSort(array, fisrt, pi - 1, size);
+		pi = partition(array, first, last, size);
+		quickSort(array, first, pi - 1, size);
 		quickSort(array, pi + 1, last, size);
 	}
 }
